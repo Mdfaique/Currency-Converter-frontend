@@ -23,7 +23,6 @@ function App() {
     if (firstAmount) {
       setLoading(true);
 
-      // Make a POST request to your backend API
       axios
         .post("http://localhost:8080/api/convert", {
           fromCurrency,
@@ -32,7 +31,7 @@ function App() {
         })
         .then((response) => {
           setResultCurrency(response.data.result);
-          setError(null); // Reset error state on successful response
+          setError(null); 
         })
         .catch((error) => {
           console.error(error);
