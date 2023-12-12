@@ -56,7 +56,7 @@ function App() {
   return (
     <Container maxWidth="md" sx={boxStyles}>
       <Typography variant="h5" sx={{ marginBottom: "2rem" }}>
-        Stay Ahead with Accurate Conversions
+        Currency Converter
       </Typography>
       <Grid container spacing={2}>
         <InputAmout />
